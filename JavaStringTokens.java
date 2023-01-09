@@ -4,8 +4,8 @@ import java.util.*;
 public class JavaStringTokens {
 
     public static void main(String[] args) {
-        Scanner asdf = new Scanner(System.in);
-        String a[] = asdf.nextLine().split("[ \"!,?._'@\". ]");
+        Scanner sc = new Scanner(System.in);
+        String a[] = sc.nextLine().split("[ \"!,?._'@\". ]");
         int size = a.length;
         for (int i = 0; i < a.length; i++) {
             if (a[i].compareTo("") == 0) {
@@ -20,5 +20,7 @@ public class JavaStringTokens {
 
             }
         }
+        sc.close();
+
     }
 }
